@@ -1,6 +1,6 @@
 body {
   padding: 3em;
-  background-image: url('/content/images/profile_background.jpg');
+  background-image: url('../content/images/profile_background.jpg');
   background-size: cover;
 }
 
