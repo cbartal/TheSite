@@ -18,12 +18,13 @@ $(document).ready(function () {
     .getElementById("iJustHadSex")
     .addEventListener("click", confettiTime, false);
   if (isNaN(parseInt(localStorage.getItem(user + "_sexCount")))) {
-      console.log("here");
-    readTextFile("../data/" + user + ".txt");
-    if (data != null) {
-      console.log("error loading data");
-      loadData();
-    }
+      readTextFile("../data/" + user + ".txt");
+      if (data == null) {
+        console.log("error loading data");
+      }
+      else {
+        loadData();
+      }
   }
   populateFields();
 });
