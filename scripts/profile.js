@@ -19,8 +19,9 @@ $(document).ready(function () {
     .addEventListener("click", confettiTime, false);
   if (isNaN(parseInt(localStorage.getItem(user + "_sexCount")))) {
       console.log("here");
-    readTextFile("./data/" + user + ".txt");
+    readTextFile("../data/" + user + ".txt");
     if (data != null) {
+      console.log("error loading data");
       loadData();
     }
   }
