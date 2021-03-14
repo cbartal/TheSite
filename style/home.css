@@ -2,7 +2,7 @@
 body {
     padding: 3em;
     color: white;
-    background-image: url('/content/images/home_background.jpg');
+    background-image: url('../content/images/home_background.jpg');
     background-size: cover;
     overflow-x: hidden;
     
