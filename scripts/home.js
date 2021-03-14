@@ -59,7 +59,7 @@ var updateData = function() {
 }
 
 var updateUser = function(user) {
-    readTextFile("../data/" + user + ".txt");
+    readTextFile("./data/" + user + ".txt");
     if (currentData == null) {
         console.log("Error");
         return;
