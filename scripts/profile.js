@@ -19,8 +19,10 @@ $(document).ready(function () {
     .addEventListener("click", confettiTime, false);
   if (isNaN(parseInt(localStorage.getItem(user + "_sexCount")))) {
       console.log("here");
-    readTextFile("./data/" + user + ".txt");
-    loadData();
+    readTextFile("../data/" + user + ".txt");
+    if (data != null) {
+      loadData();
+    }
   }
   populateFields();
 });
@@ -82,7 +84,8 @@ function readTextFile(file) {
       }
     }
   };
-  rawFile.send(null);
+  //rawFile.send(null);
+  data = null;
 }
 
 var loadData = function () {
@@ -158,7 +161,7 @@ var updateBio = function() {
 
 var camInfo = function() {
     document.getElementById("tabtitle").innerHTML = "Cameron Hart";
-    document.getElementById("profilePic").src = "./content/images/cameron_small.jpg";
+    document.getElementById("profilePic").src = "../content/images/cameron_small.jpg";
     document.getElementById("name").innerHTML = "Cameron Hart";
     document.getElementById("built").innerHTML = "Built Ugly";
     document.getElementById("twitter").href = "https://twitter.com/imhartless12";
