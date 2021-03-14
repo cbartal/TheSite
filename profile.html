@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title id="tabtitle"></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style/profile.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="/scripts/profile.js"></script> 
+    <h1 class="pageTitle"><a href="/index.html" class="pageTitle">MySexTracker</a></h1>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        id="profilePic"
+        src=""
+        alt="Cameron"
+        style="width: 40%"
+        class="img-circle"
+      />
+      <h1 id="name"></h1>
+      <p class="title" id="built"></p>
+      <p>Virginia Tech</p>
+      <a href="" target="__blank" id="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="" target="__blank" id="instagram"><i class="fa fa-instagram"></i></a>
+      <a href="" target="__blank" id="facebook"><i class="fa fa-facebook"></i></a>
+      <p><button>Booty Call</button></p>
+    </div>
+    <br />
+    <div class="center-div">
+      <div id="iJustHadSex">
+        <img src="/content/images/ok_hand.png" />
+        <img src="content/images/pointing.png" id="pointer" />
+      </div>
+    </div>
+    <br>
+    <div class="well" id="statTable">
+        <div class="row" >
+            <div class="col-md-3">Body Count</div>
+            <div class="col-md-3">Sex Count (2021)</div>
+            <div class="col-md-3">Last Nut</div>
+            <div class="col-md-3">Average Time</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><h2 id="bodyCount"></h2></div>
+            <div class="col-md-3"><h2 id="sexCount"></h2></div>
+            <div class="col-md-3"><h2 id="lastNut"></h2></div>
+            <div class="col-md-3"><h2 id="averageTime"></h2></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><button type="button" class="btn btn-success" id="gotLucky" onclick="increaseBodyCount()">Got Lucky?</button></div>
+            <div class="col-md-3" id="hornyLevelReading">Hornieness Level:</div>
+            <div class="col-md-3"><input type="range" min="1" max="100" value="50" class="slider" id="hornyLevel" onchange="updateHorny(this.value)"></div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MySexTracker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/home.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="/scripts/home.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body> 
+        <div >
+            <h1 class="pageTitle">MySexTracker</h1>
+        </div>
+        
+        <div id="theBoys" class="container-fluid">
+            <h2>The Boys</h2>
+            <div class="row">
+                <div class="col-md-2">
+                  <div class="thumbnail" >
+                    <a href="/profile.html">
+                        <img src="/content/images/cameron_small.jpg" alt="Cameron" class="img-responsive img-circle">
+                        <div class="caption">
+                            <p class="name">Cameron Hart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                  <div class="thumbnail">
+                    <a href="/profile.html">
+                        <img src="/content/images/connor_small.jpg" alt="Connor" class="img-responsive img-circle">
+                        <div class="caption">
+                            <p class="name">Connor Bartal</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                  <div class="thumbnail">
+                    <a href="/profile.html">
+                        <img src="/content/images/jax_small.jpg" alt="Jaxon" class="img-responsive img-circle">
+                        <div class="caption">
+                            <p class="name">Jaxon Delgado</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div id="infoTable" class="well">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr id="tableHeader">
+                            <th>Name</th>
+                            <th>Body Count</th>
+                            <th>Sex Count</th>
+                            <th>Last Nut</th>
+                            <th>Horniness Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Cameron</th>
+                            <th id="cameronBC"></th>
+                            <th id="cameronSC"></th>
+                            <th id="cameronLN"></th>
+                            <th>
+                                <div id="cameronHL" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Connor</th>
+                            <th id="connorBC"></th>
+                            <th id="connorSC"></th>
+                            <th id="connorLN"></th>
+                            <th>
+                                <div id="connorHL" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Jax</th>
+                            <th id="jaxBC"></th>
+                            <th id="jaxSC"></th>
+                            <th id="jaxLN"></th>
+                            <th>
+                                <div id="jaxHL" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
+

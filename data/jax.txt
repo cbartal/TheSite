@@ -1,0 +1,5 @@
+bodycount=4
+sexcount=7
+lastnut=2/17/2021
+averagetime=8:05
+horniness=45

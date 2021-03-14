@@ -1,0 +1,95 @@
+body {
+  padding: 3em;
+  background-image: url('/content/images/profile_background.jpg');
+  background-size: cover;
+}
+
+.pageTitle {
+    font-size:50pt;
+    text-decoration:underline dashed red !important;
+    color: white !important;
+} 
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  background-color: rgb(223, 223, 223);
+  text-align: center;
+  padding: 2em;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.center-div{
+    text-align: center;
+}
+
+#pointer {
+  position: relative;
+  padding-top:30px;
+}
+#iJustHadSex {
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+#iJustHadSex:hover #pointer {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: -60px;
+  }
+  50% {
+    left: 10px;
+  }
+  75% {
+    left: -60px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+
+#statTable {
+    text-align: center;
+    color: black;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+

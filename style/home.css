@@ -1,0 +1,41 @@
+
+body {
+    padding: 3em;
+    color: white;
+    background-image: url('/content/images/home_background.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+.pageTitle {
+    font-size:4em;
+    text-decoration:underline dashed red !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .pageTitle {
+        font-size:2em;
+        text-decoration:underline dashed red !important;
+    }
+}
+
+
+.thumbnail{
+    background-color: gray;
+    text-align: center;
+}
+
+.name {
+    color: black;
+    font-weight: bold;
+}
+
+.well {
+    background-color: gray;
+    color: black;
+}
+
+
+.row {
+    width: 100%;
+}
