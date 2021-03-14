@@ -158,7 +158,7 @@ var updateBio = function() {
 
 var camInfo = function() {
     document.getElementById("tabtitle").innerHTML = "Cameron Hart";
-    document.getElementById("profilePic").src = "/content/images/cameron_small.jpg";
+    document.getElementById("profilePic").src = "./content/images/cameron_small.jpg";
     document.getElementById("name").innerHTML = "Cameron Hart";
     document.getElementById("built").innerHTML = "Built Ugly";
     document.getElementById("twitter").href = "https://twitter.com/imhartless12";
@@ -168,7 +168,7 @@ var camInfo = function() {
 
 var connorInfo = function() {
     document.getElementById("tabtitle").innerHTML = "Connor Bartal";
-    document.getElementById("profilePic").src = "/content/images/connor_small.jpg";
+    document.getElementById("profilePic").src = "./content/images/connor_small.jpg";
     document.getElementById("name").innerHTML = "Connor Bartal";
     document.getElementById("built").innerHTML = "Built Autistic";
     document.getElementById("twitter").href = "https://twitter.com/Connor_Bartal";
@@ -178,7 +178,7 @@ var connorInfo = function() {
 
 var jaxInfo = function() {
     document.getElementById("tabtitle").innerHTML = "Jaxon Delgado";
-    document.getElementById("profilePic").src = "/content/images/jax_small.jpg";
+    document.getElementById("profilePic").src = "./content/images/jax_small.jpg";
     document.getElementById("name").innerHTML = "Jaxon Delgado";
     document.getElementById("built").innerHTML = "Built Defective";
     document.getElementById("twitter").href = "https://twitter.com/jaxon_delgado";
