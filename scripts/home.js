@@ -3,6 +3,30 @@ var currentData = "";
 $(document).ready(function() {
     profilePics = document.getElementsByClassName("thumbnail");
     addListeners();
+    //set initial values
+    if (localStorage.getItem("dataEntered") == null) {
+        console.log("Entering Initial Data Points");
+        localStorage.setItem("dataEntered", "false");
+
+        localStorage.setItem("cameron_bodyCount", "11");
+        localStorage.setItem("cameron_sexCount", "4");
+        localStorage.setItem("cameron_lastNut", new Date(1/9/2021));
+        localStorage.setItem("cameron_averageTime", "10:05");
+        localStorage.setItem("cameron_horniness", "80");
+
+        localStorage.setItem("connor_bodyCount", "10");
+        localStorage.setItem("connor_sexCount", "8");
+        localStorage.setItem("connor_lastNut", new Date(3/3/2021));
+        localStorage.setItem("connor_averageTime", "12:05");
+        localStorage.setItem("connor_horniness", "25");
+
+        localStorage.setItem("jax_bodyCount", "4");
+        localStorage.setItem("jax_sexCount", "7");
+        localStorage.setItem("jax_lastNut", new Date(2/17/2021));
+        localStorage.setItem("jax_averageTime", "8:05");
+        localStorage.setItem("jax_horniness", "45");
+    }
+    updateData();
 });
 
 
@@ -24,7 +48,7 @@ var addListeners = function() {
     for (var i = 0; i < profilePics.length; i++) {
         profilePics[i].addEventListener('click', navigate_profile, false);
     }
-    updateData();
+    
 }
 
 
@@ -59,16 +83,16 @@ var updateData = function() {
 }
 
 var updateUser = function(user) {
-    readTextFile("./data/" + user + ".txt");
-    if (currentData == null) {
-        console.log("Error");
-        return;
-    }
-    var splitData = currentData.split("\n");
-    var bodyCount = sanitize(splitData[0]);
-    var sexCount = sanitize(splitData[1]);
-    var lastNut = new Date(sanitize(splitData[2]));
-    var horniness = sanitize(splitData[4]);
+    //readTextFile("./data/" + user + ".txt");
+    // if (currentData == null) {
+    //     console.log("Error");
+    //     return;
+    // }
+    // var splitData = currentData.split("\n");
+    // var bodyCount = sanitize(splitData[0]);
+    // var sexCount = sanitize(splitData[1]);
+    // var lastNut = new Date(sanitize(splitData[2]));
+    // var horniness = sanitize(splitData[4]);
     document.getElementById(user + "BC").innerHTML = localStorage.getItem(user + "_bodyCount");
     document.getElementById(user + "SC").innerHTML = localStorage.getItem(user + "_sexCount");
     var lastNut = new Date(localStorage.getItem(user + "_lastNut"));

@@ -5,11 +5,17 @@ body {
 }
 
 .pageTitle {
-    font-size:50pt;
-    text-decoration:underline dashed red !important;
-    color: white !important;
-} 
+  font-size:50pt;
+  color: white;
+  text-decoration:underline dashed red !important;
+}
 
+@media only screen and (max-width: 500px) {
+  .pageTitle {
+      font-size:25pt;
+      text-decoration:underline dashed red !important;
+  }
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;

@@ -8,13 +8,13 @@ body {
     
 }
 .pageTitle {
-    font-size:4em;
+    font-size:50pt;
     text-decoration:underline dashed red !important;
 }
 
 @media only screen and (max-width: 500px) {
     .pageTitle {
-        font-size:2em;
+        font-size:25pt;
         text-decoration:underline dashed red !important;
     }
 }
