@@ -13,7 +13,7 @@ var sexyTimeDiv;
 $(document).ready(function () { 
   user = localStorage.getItem("currentUser");
   updateBio();
- 
+
   sexyTimeDiv = document
     .getElementById("iJustHadSex")
     .addEventListener("click", confettiTime, false);
@@ -88,6 +88,7 @@ function readTextFile(file) {
   };
   //rawFile.send(null);
   data = null;
+  console.log(data);
 }
 
 var loadData = function () {
